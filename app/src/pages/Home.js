@@ -2,22 +2,16 @@ import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/rea
 import React from 'react';
 import ExploreContainer from '../components/ExploreContainer.js';
 import './Home.css';
+import Eggo from '../components/Eggo';
 
 const Home = () => {
   return (
     <IonPage>
-      <IonHeader>
-        <IonToolbar>
-          <IonTitle>Blank</IonTitle>
-        </IonToolbar>
-      </IonHeader>
       <IonContent fullscreen>
-        <IonHeader collapse="condense">
-          <IonToolbar>
-            <IonTitle size="large">Blank</IonTitle>
-          </IonToolbar>
-        </IonHeader>
-        <ExploreContainer />
+        <div style={{width: '100%', height: '100%', position: 'relative'}}>
+          <ExploreContainer />
+          <Eggo />
+        </div>
       </IonContent>
     </IonPage>
   );
