@@ -1,8 +1,9 @@
 import React from 'react';
 import { Redirect, Route } from 'react-router-dom';
-import { IonApp, IonRouterOutlet } from '@ionic/react';
+import { IonApp, IonTabs, IonTabBar, IonTabButton, IonIcon, IonLabel, IonBadge, IonRouterOutlet } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
 import Home from './pages/Home';
+import { calendar } from 'ionicons/icons';
 
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
@@ -26,10 +27,26 @@ import './theme/variables.css';
 const App = () => (
   <IonApp>
     <IonReactRouter>
-      <IonRouterOutlet>
-        <Route path="/home" component={Home} exact={true} />
-        <Route exact path="/" render={() => <Redirect to="/home" />} />
-      </IonRouterOutlet>
+			<IonTabs>
+				<IonRouterOutlet>
+					<Route path="/home" component={Home} exact={true} />
+					<Route exact path="/" render={() => <Redirect to="/home" />} />
+				</IonRouterOutlet>
+				<IonTabBar slot="bottom">
+					<IonTabButton>
+						<IonIcon icon={calendar} />
+						<IonLabel>Label 1</IonLabel>
+					</IonTabButton>
+					<IonTabButton>
+						<IonIcon icon={calendar} />
+						<IonLabel>Label 2</IonLabel>
+					</IonTabButton>
+					<IonTabButton>
+						<IonIcon icon={calendar} />
+						<IonLabel>Label 3</IonLabel>
+					</IonTabButton>
+				</IonTabBar>
+			</IonTabs>
     </IonReactRouter>
   </IonApp>
 );
