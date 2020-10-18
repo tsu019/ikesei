@@ -1,0 +1,7 @@
+{
+  "name": "ikusei-ionic",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}
