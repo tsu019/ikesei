@@ -2,7 +2,7 @@ import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/rea
 import React from 'react';
 import ExploreContainer from '../components/ExploreContainer.js';
 import './Home.css';
-import Eggo from '../components/Eggo';
+import Eggo from '../components/Avatar';
 
 const Home = () => {
   return (
