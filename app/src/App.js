@@ -3,7 +3,9 @@ import { Redirect, Route } from 'react-router-dom';
 import { IonApp, IonTabs, IonTabBar, IonTabButton, IonIcon, IonLabel, IonBadge, IonRouterOutlet } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
 import Home from './pages/Home';
-import { calendar } from 'ionicons/icons';
+import { basketballOutline, bedOutline, pizzaOutline } from 'ionicons/icons';
+
+import { Meter } from './components/Meter';
 
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
@@ -32,19 +34,19 @@ const App = () => (
 					<Route path="/home" component={Home} exact={true} />
 					<Route exact path="/" render={() => <Redirect to="/home" />} />
 				</IonRouterOutlet>
-				<IonTabBar slot="bottom">
-					<IonTabButton>
-						<IonIcon icon={calendar} />
-						<IonLabel>Label 1</IonLabel>
-					</IonTabButton>
-					<IonTabButton>
-						<IonIcon icon={calendar} />
-						<IonLabel>Label 2</IonLabel>
-					</IonTabButton>
-					<IonTabButton>
-						<IonIcon icon={calendar} />
-						<IonLabel>Label 3</IonLabel>
-					</IonTabButton>
+				<IonTabBar slot="bottom" color="black">
+						<IonTabButton>
+							<IonIcon icon={basketballOutline} />
+							<IonLabel>Play</IonLabel>
+						</IonTabButton>
+						<IonTabButton>
+							<IonIcon icon={pizzaOutline} />
+							<IonLabel>Eat</IonLabel>
+						</IonTabButton>
+						<IonTabButton>
+							<IonIcon icon={bedOutline} />
+							<IonLabel>Sleep</IonLabel>
+						</IonTabButton>
 				</IonTabBar>
 			</IonTabs>
     </IonReactRouter>

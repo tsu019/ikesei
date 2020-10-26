@@ -1,0 +1,48 @@
+.wrapper {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  height: auto;
+  width: 15vw;
+  display: block;
+  text-align: center;
+  margin: 1rem 1rem;
+}
+
+.meter p {
+  color: #000;
+  font-family: 'Overpass', sans-serif;
+  margin: 0 auto;
+  font-weight: 600;
+}
+
+#icon-1 {
+  color: #F96A6A;
+  margin-top: 0.5rem;
+}
+
+#icon-2 {
+  color: #FAC358;
+}
+
+#icon-3 {
+  color: #54C2DA;
+}
+
+.meter span {
+  font-size: 0.9rem;
+  margin-left: 0.3rem;
+}
+
+hr {
+  border-width: 2px;
+  background-color: rgba(0, 0, 0, 0.2);
+  width: 70%;
+}
+
+.info {
+  padding: 0.2rem 0;
+}
+
+#last-stat {
+  margin-bottom: 0.3rem;
+}
