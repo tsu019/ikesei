@@ -12,5 +12,7 @@
 }
 
 .egg {
+	display: inline-block;
+	transform: scale(3);
   animation: bounce 1s infinite;
 }
