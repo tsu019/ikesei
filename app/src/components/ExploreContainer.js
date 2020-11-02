@@ -5,7 +5,7 @@ import Meter from './Meter';
 const ExploreContainer = () => {
   return (
     <div className="">
-      <Meter />
+      <Meter health="72" happiness="60" hunger="80" />
     </div>
   );
 };

@@ -1,0 +1,49 @@
+body {
+	font-family: 'Overpass';
+	font-weight: 600;
+	font-size: 16px;	
+	color: #323232;
+}
+
+h1 {
+	font-family: 'Overpass';
+	font-weight: 600;
+	font-size: 50px;
+	line-height: 77px;
+	color: #323232;
+	margin-top: 0;
+	margin-bottom: 8px;
+}
+
+h2 {
+	font-family: 'Overpass';
+	font-weight: 700;
+	font-size: 30px;
+	line-height: 38px;
+	margin-top: 0;
+	margin-bottom: 8px;
+}
+
+h3 {
+	font-family: 'Overpass';
+	font-weight: 700;
+	font-size: 20px;
+	color: #323232;
+	margin: 0;
+}
+
+p {
+	font-family: 'Overpass';
+	font-weight: 600;
+	font-size: 16px;	
+}
+
+.btn {
+	background-color: #323232;
+	font-weight: 600;
+	font-size: 16px;	
+	color: white;
+	border-radius: 9999px;
+	padding: 18px 72px;
+	text-decoration: none;
+}
